@@ -209,7 +209,7 @@ body {
 }
 
 .message {
-    padding: 1rem;
+    padding: .3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -245,7 +245,7 @@ body {
     word-wrap: normal;
     word-break: break-word;
     align-items: center;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     font-size: 1.1rem;
 }
 
