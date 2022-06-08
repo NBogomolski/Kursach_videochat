@@ -44,6 +44,13 @@ body{
   }
 }
 
+@media only screen and (max-width: 1030px) {
+    .welcome_main {
+        flex-direction: row;
+        width: 100vw;
+    }
+}
+
 .welcome_create > *, .welcome_join > * {
     margin: 10px auto;
 }
