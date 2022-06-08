@@ -21,7 +21,7 @@ const stunServers = {
 
 const mediaStreamConfig = {
     audio: true,
-    video: true
+    video: true,
 };
 
 socket.on("full_room", (room) => {
@@ -169,7 +169,7 @@ async function start() {
     roomId = res.id;
     socket.emit("join", clientId);
     localVideo.srcObject = localStream =
-        navigator.mediaDevices.getUserMedia(mediaStreamConfig);
+        await navigator.mediaDevices.getUserMedia(mediaStreamConfig);
     localVideo.play();
     socket.emit("ready", clientId);
 }
@@ -177,7 +177,7 @@ async function start() {
 start();
 
 function changeVideoStatus() {
-/*     if (localVideo.getVideoTracks == null) {
+    /*     if (localVideo.getVideoTracks == null) {
         alert("Video camera wasn't found on your device");
         return;
     } */
