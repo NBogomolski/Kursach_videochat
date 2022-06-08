@@ -91,20 +91,24 @@ body {
 }
 
 .main_buttons {
-    width: 75%;
+    /* width: 75%; */
     height: 3.3rem;
     position: fixed;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+
+    margin-left: 25%;
 }
+
+
 
 .control_btn_panel {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     height: 3.3rem;
     z-index: 101;
 }
@@ -127,7 +131,11 @@ body {
     max-width: 20%;
     margin-left: 5px;
     margin-bottom: 5px;
-    background-color: #cfe2ff;
+    background-color: #212529;
+
+    left: auto;
+    bottom: auto;
+    top: 60px;
 }
 
 .header-container {
@@ -143,8 +151,8 @@ body {
 
 .main_chat {
     width: 25%;
+    max-width: 360px;
     height: calc(100vh - 3.5rem);
-    margin-left: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,24 +266,51 @@ body {
 
 .audio_status_enabled {
     background-image: url("../image/mic.svg");
+    background-size: 48%;
 }
 
 .audio_status_disabled {
-    background-image: url("../image/mic-mute.svg");
+    background-image: url("../image/mic-off.svg");
 }
 
 .video_status_enabled {
-    background-image: url("../image/camera-video.svg");
+    background-image: url("../image/camera.svg");
 }
 
 .video_status_disabled {
-    background-image: url("../image/camera-video-off.svg");
+    background-image: url("../image/camera-off.svg");
 }
 
 #demonstrate_screen {
-    background-image: url("../image/laptop.svg");
+    background-image: url("../image/screencast.svg");
+    background-size: 80%;
 }
 
 #open_chat {
-    background-image: url("../image/chat-left.svg");
+    background-image: url("../image/chat.svg");
+}
+
+.main_chat.fixed-bottom.bg-light {
+    right: 100%;
+}
+
+#chat-input {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#chat-input + button {
+    border-radius: 10px;
+}
+
+#get_room_btn {
+    color: #fff;
+}
+
+html body .control_btn {
+    border-radius: 10px;
+}
+
+.header-btn-container button {
+    border-radius: 10px;
 }

@@ -245,6 +245,7 @@ function closeChat() {
     $(".main_chat").hide(DEFAULT_ANIMATION_TIMEOUT);
     $(".main_video").css("width", "100%");
     $(".main_buttons").css("width", "100%");
+    $(".main_buttons").css("margin-left", "0");
 }
 
 function chatButtonClickHandler() {
@@ -252,6 +253,7 @@ function chatButtonClickHandler() {
         $(".main_chat").show(DEFAULT_ANIMATION_TIMEOUT);
         $(".main_video").css("width", "75%");
         $(".main_buttons").css("width", "75%");
+        $(".main_buttons").css("margin-left", "25%");
     } else {
         closeChat();
     }

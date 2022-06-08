@@ -8,125 +8,121 @@
     <title>Video chat</title>
     <link rel="stylesheet" href="style/videoroom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
 
-<nav class="navbar navbar-dark bg-dark sticky-top">
-    <div class="header-container">
-        <a class="navbar-brand">SlaVideo Chat</a>
-        <div class='header-btn-container'>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="header-container">
+            <a class="navbar-brand">S C O P E</a>
+            <div class='header-btn-container'>
 
-            <button id="get_room_btn"
-                    onclick="copyIdToClipboard()"
-                    type="button"
-                    class="header-btn btn1c btn btn-primary"
-                    data-bs-container="body"
-                    data-bs-toggle="popover"
-                    data-bs-placement="bottom"
-                    data-bs-content="Id is copied to clipboard">
-                Get Room Id
-            </button>
+                <button id="get_room_btn" onclick="copyIdToClipboard()" type="button" class="btn btn-outline-info"
+                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                    data-bs-content="Room id is copied to clipboard">
+                    Copy Room Id
+                </button>
 
-            <button onclick="leaveRoom()" class="header-btn btn btn-danger">Leave</button>
-        </div>
-    </div>
-</nav>
-
-<div class="main">
-    <div class="main_video">
-        <div class="main_video_part">
-            <div id="remote_videos">
-
-
-<!--                <div class="remote_video_el two_clients">-->
-<!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
-<!--                    <span class="video_client_name">Slava</span>-->
-<!--                </div>-->
-
-<!--                <div class="remote_video_el two_clients">-->
-<!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
-<!--                    <span class="video_client_name">Slava</span>-->
-<!--                </div>-->
-<!--                <div class="remote_video_el two_clients">-->
-<!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
-<!--                    <span class="video_client_name">Slava</span>-->
-<!--                </div>-->
-
+                <button onclick="leaveRoom()" class="header-btn btn btn-outline-warning">Leave Meeting</button>
             </div>
-        </div>
-    </div>
-</div>
-
-<footer class="footer"></footer>
-
-<div class="main_chat fixed-bottom bg-light">
-    <nav class="chat-header navbar-light bg-light">
-        <div class="chat-container">
-            <a class="navbar-brand">Chat</a>
-            <button onclick="closeChat()" id="close_chat_btn" type="button" class="btn-close"
-                    aria-label="Close"></button>
         </div>
     </nav>
 
-    <div class="messages">
-
-<!--        <div class="income_message">-->
-<!--            <div class="message income_message_inner">-->
-<!--                <div class="sender_name">Slava</div>-->
-<!--                <div class="message_content">Привет, как твои дела?)</div>-->
-<!--                <div class="time-container">-->
-<!--                    <p class="message_time">19:15</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="my_message">-->
-<!--            <div class="message my_message_inner">-->
-<!--                <div class="sender_name">You</div>-->
-<!--                <div class="message_content">Отлично</div>-->
-<!--                <div class="time-container">-->
-<!--                    <p class="message_time">19:15</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+    <div class="main">
+        <div class="main_video">
+            <div class="main_video_part">
+                <div id="remote_videos">
 
 
+                    <!--                <div class="remote_video_el two_clients">-->
+                    <!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
+                    <!--                    <span class="video_client_name">Slava</span>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="remote_video_el two_clients">-->
+                    <!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
+                    <!--                    <span class="video_client_name">Slava</span>-->
+                    <!--                </div>-->
+                    <!--                <div class="remote_video_el two_clients">-->
+                    <!--                    <video class="remote_video" autoplay="autoplay" playsinline="playsinline"></video>-->
+                    <!--                    <span class="video_client_name">Slava</span>-->
+                    <!--                </div>-->
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="input-group mb-3 chat-form">
-        <input id="chat-input" type="text" class="form-control" placeholder="Message..." aria-label="Message..."
-               aria-describedby="button-addon2">
-        <button onclick="sendMessage()" class="btn btn-primary" type="button">Send</button>
-    </div>
-</div>
+    <footer class="footer"></footer>
 
-<div class="main_buttons fixed-bottom">
-    <div class="control_btn_panel">
-        <button class="btn btn-secondary control_btn control_btn audio_status_enabled" onclick="changeAudioStatus()"
+    <aside class="main_chat fixed-bottom bg-light">
+        <nav class="chat-header navbar-light bg-light">
+            <div class="chat-container">
+                <a class="navbar-brand">Chat</a>
+                <button onclick="closeChat()" id="close_chat_btn" type="button" class="btn-close"
+                    aria-label="Close"></button>
+            </div>
+        </nav>
+
+        <div class="messages">
+
+            <!--        <div class="income_message">-->
+            <!--            <div class="message income_message_inner">-->
+            <!--                <div class="sender_name">Slava</div>-->
+            <!--                <div class="message_content">Привет, как твои дела?)</div>-->
+            <!--                <div class="time-container">-->
+            <!--                    <p class="message_time">19:15</p>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+
+            <!--        <div class="my_message">-->
+            <!--            <div class="message my_message_inner">-->
+            <!--                <div class="sender_name">You</div>-->
+            <!--                <div class="message_content">Отлично</div>-->
+            <!--                <div class="time-container">-->
+            <!--                    <p class="message_time">19:15</p>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+
+
+        </div>
+
+        <div class="input-group mb-3 chat-form">
+            <input id="chat-input" type="text" class="form-control" placeholder="Message..." aria-label="Message..."
+                aria-describedby="button-addon2">
+            <button onclick="sendMessage()" class="btn btn-outline-success" type="button">Send</button>
+        </div>
+    </aside>
+
+    <div class="main_buttons fixed-bottom smaller-buttons">
+        <div class="control_btn_panel">
+            <button class="btn btn-light control_btn control_btn audio_status_enabled" onclick="changeAudioStatus()"
                 id="audio_status">
-        </button>
-        <button class="btn btn-secondary control_btn video_status_enabled" onclick="changeVideoStatus()"
+            </button>
+            <button class="btn btn-light control_btn video_status_enabled" onclick="changeVideoStatus()"
                 id="video_status"></button>
-        <button class="btn btn-secondary control_btn" onclick="demonstrateScreen()" id="demonstrate_screen">
-        </button>
-        <button class="btn btn-secondary control_btn" onclick="chatButtonClickHandler(this)" id="open_chat">
-        </button>
+            <button class="btn btn-light control_btn" onclick="demonstrateScreen()" id="demonstrate_screen">
+            </button>
+            <button class="btn btn-light control_btn" onclick="chatButtonClickHandler(this)" id="open_chat">
+            </button>
+        </div>
     </div>
-</div>
 
-<video id="local_video" class="fixed-bottom"></video>
+    <video id="local_video" class="fixed-bottom"></video>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    <script src="script/minimizeButtons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src='/socket.io/socket.io.js'></script>
-<script src='script/const.js'></script>
-<script src='script/initBootstrapElements.js'></script>
-<script src='script/clientId.js'></script>
-<script src="client.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='script/const.js'></script>
+    <script src='script/initBootstrapElements.js'></script>
+    <script src='script/clientId.js'></script>
+    <script src="client.js"></script>
 </body>
 
 </html>
