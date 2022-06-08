@@ -1,0 +1,57 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.record{
+    font-size: 3rem;
+}
+
+.main{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.welcome_main{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome_create, .welcome_join{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 30%;
+}
+
+.button_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.alert-danger{
+    position: fixed;
+    width: 100%;
+}
+
+.create_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

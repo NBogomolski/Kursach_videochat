@@ -1,0 +1,23 @@
+.display-1{
+    font-size: 10rem !important;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main_inner{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome_page_ref{
+    font-size: 1.3rem;
+}
