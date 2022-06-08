@@ -8,6 +8,10 @@ body{
     font-size: 3rem;
 }
 
+.display-2 {
+    margin: 10vh auto 4vh;
+}
+
 .main{
     display: flex;
     width: 100vw;
@@ -18,20 +22,30 @@ body{
 }
 
 .welcome_main{
-    width: 100vw;
-    height: 20vh;
+    height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .welcome_create, .welcome_join{
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    max-height: 30vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 1500px) {
+  .welcome_create, .welcome_join, .welcome_main {
+    width: 34vw;
+  }
+}
+
+.welcome_create > *, .welcome_join > * {
+    margin: 10px auto;
 }
 
 .btn{
