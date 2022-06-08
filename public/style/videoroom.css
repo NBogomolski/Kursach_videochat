@@ -101,6 +101,9 @@ body {
     margin-left: 25%;
 }
 
+.input-group.chat-form {
+    margin-bottom: 3rem;
+}
 
 
 .control_btn_panel {
