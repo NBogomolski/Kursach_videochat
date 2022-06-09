@@ -18,7 +18,8 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.get('/connect', (req, res) => {
-    const reqUrl = new URL(req.url, 'http://localhost:5000');
+    // const reqUrl = new URL(req.url, 'http://localhost:5000');
+    const reqUrl = new URL(req.url, "https://kursach-videochat-2h0q8jddi-h1dd3ngod.vercel.app/");
     const uid = reqUrl.searchParams.get('uid');
 
     if (!uid) {
